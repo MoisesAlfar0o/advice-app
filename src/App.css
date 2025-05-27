@@ -1,0 +1,107 @@
+:root {
+  --bg-color-blue-600: hsl(217, 19%, 38%);
+  --bg-color-blue-900: hsl(217, 19%, 24%);
+  --bg-color-blue-950: hsl(218, 23%, 16%);
+  --bg-color-green-300: hsl(150, 100%, 66%);
+  --text-color-blue-200: hsl(193, 38%, 86%);
+  --text-color-green-300: hsl(150, 100%, 66%);
+  --ft-family: 'Manrope', sans-serif;
+  --ft-size: 28px;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color-blue-950);
+  font-family: var(--ft-family);
+  font-size: var(--ft-size);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.advice-container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  background: var(--bg-color-blue-900);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 15px;
+  width: 510px;
+  height: auto;
+  padding: 35px 24px 63px;
+}
+
+.advice-container h1 {
+  color: var(--text-color-green-300);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.advice-container q {
+  display: block;
+  color: var(--text-color-blue-200);
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.advice-container img {
+  width: 100%;
+}
+
+.advice-container button {
+  position: absolute;
+  background-color: var(--text-color-green-300);
+  border: none;
+  border-radius: 50%;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: box-shadow ease-in 0.4s;
+}
+
+.advice-container button:hover {
+  box-shadow: 0 0 35px var(--bg-color-green-300);
+}
+
+.advice-container button img {
+  margin-top: 4px;
+  width: 25px;
+  height: 25px;
+}
+
+.advice-container button img {
+  transition: transform 2s;
+}
+
+.advice-container button:hover img {
+  transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+  .advice-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .advice-container q {
+    font-size: 24px;
+  }
+}
