@@ -7,8 +7,8 @@ This is a solution to the [Advice generator app on Frontend Mentor.](https://www
 
 ## Links
 
-- Solution URL: [here]()
-- Live Site URL: [here]()
+- Solution URL: [here](https://www.frontendmentor.io/solutions/advice-generator-app-react-Oqi_dorNsN)
+- Live Site URL: [here](https://advice-app-eta-plum.vercel.app/)
 
 
 ## Build with
